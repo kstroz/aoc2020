@@ -1,2 +1,2 @@
-# aoc2020
-Advent of code 2020
+# My solutions for this year advent of code tasks.
+[Advent of code page](https://adventofcode.com/)
