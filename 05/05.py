@@ -40,4 +40,15 @@ def get_id(cords):
     return (row - 1) * 8 + (col - 1)
 
 
-print(max([get_id(get_cords(line)) for line in lines]))
+seats_ids = [get_id(get_cords(line)) for line in lines]
+print(max(seats_ids))
+
+seats_ids.sort()
+seats_ids = seats_ids[1:-1]
+counter = min(seats_ids)
+
+for id in seats_ids:
+    if id != counter:
+        print(id)
+        break
+    counter += 1
